@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8080
 spring:
   application:
     name: gateway-service
@@ -25,7 +25,7 @@ spring:
               - Method=GET
             filters:
               - RewritePath=/books/health, /health
-          - id: registry-service
+          - id: eureka-service
             uri: http://localhost:8761
             predicates:
               - Path=/eureka/web
