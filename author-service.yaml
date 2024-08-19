@@ -26,10 +26,11 @@ management:
     port: 8101
   health:
     mongo:
-      command: ping
-      enabled: true
-    ping:
-      enabled: true
+      enabled: false
+#      command: ping
+#      enabled: true
+#    ping:
+#      enabled: true
 #  endpoint:
 #    health:
 #      show-details: always
