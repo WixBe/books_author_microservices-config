@@ -31,6 +31,6 @@ management:
 #      enabled: true
 #    ping:
 #      enabled: true
-#  endpoint:
-#    health:
-#      show-details: always
+  endpoint:
+    health:
+      show-details: always
