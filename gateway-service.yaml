@@ -14,7 +14,7 @@ spring:
           - id: author-service
             uri: lb://AUTHORSERVICE
             predicates:
-              - Path=/authors/**
+              - Path=/author/**
               - Method=GET
             filters:
               - RewritePath=/authors/health, /health
